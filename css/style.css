@@ -87,8 +87,11 @@ button {
   grid-column: full-start / full-end; }
 
 .features {
-  background-color: #aaa;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 9.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.7rem; }
 
 .realtors {
   background-color: #101d2c;
