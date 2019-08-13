@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 100%; 
+
+	@include respond(extra-large) {
+        font-size: 90%;
+	}
+	
+	@include respond(large) {
+        font-size: 80%;
+    }
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input {
+	font-display: inherit;
+	font-size: 16px;
+	color: inherit;
+	border: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+button {
+	border: none;
+	
+	&:focus {
+		outline: none;
+	}
+}
