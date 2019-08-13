@@ -1,0 +1,22 @@
+.feature {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1.5rem;
+
+    &__icon {
+        fill: $color-primary;
+        height: 2.8rem;
+        width: 2.8rem;
+        
+    }
+
+    &__text {
+        font-size: 1rem;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
