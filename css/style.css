@@ -191,6 +191,18 @@ button {
   font-style: italic;
   margin-bottom: 2.5rem; }
 
+.home {
+  background-color: #f9f7f6; }
+  .home__img {
+    width: 100%; }
+  .home__like {
+    height: 1.3rem;
+    width: 1.3rem; }
+  .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+    height: 1.3rem;
+    width: 1.3rem;
+    fill: #c69963; }
+
 .header {
   background-color: #54483A;
   grid-column: full-start / col-end 6; }
@@ -208,8 +220,11 @@ button {
   grid-gap: 3.7rem; }
 
 .homes {
-  background-color: #101d2c;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 9.3rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.6rem, 1fr));
+  grid-gap: 4.3rem; }
 
 .footer {
   background-color: #101d2c;
