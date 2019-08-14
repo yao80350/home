@@ -59,7 +59,7 @@
     cursor: pointer;
     transition: all .2s;
 
-    :hover {
+    &:hover {
         background-color: $color-primary-dark;
     }
 }
