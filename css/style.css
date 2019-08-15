@@ -204,7 +204,26 @@ button {
 
 .realtors {
   background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
+  grid-column: col-start 7 / full-end;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row-gap: 1.2rem;
+  justify-items: center;
+  padding: 1.9rem; }
+  .realtors__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-row-gap: 5vh;
+    grid-column-gap: 1.2rem;
+    align-items: center; }
+  .realtors__img {
+    width: 4.4rem;
+    border-radius: 50%; }
+  .realtors__sold {
+    color: #aaa;
+    font-size: .8rem;
+    text-transform: uppercase; }
 
 .story__pictures {
   background-color: #c69963;
