@@ -92,6 +92,11 @@ button {
   font-weight: 300;
   line-height: 1.6; }
 
+.heading-1 {
+  font-size: 2.8rem;
+  color: #fff;
+  line-height: 1; }
+
 .heading-2 {
   font-size: 2.5rem;
   font-style: italic;
@@ -286,7 +291,23 @@ button {
 
 .header {
   background-color: #54483A;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem 5rem 5rem 5rem;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-template-rows: 1fr min-content 3.75rem 1fr;
+  justify-content: center; }
+  .header__logo {
+    height: 1.9rem;
+    justify-self: center; }
+  .header__btn {
+    justify-self: start;
+    align-self: start; }
+  .header__seenon-logos img {
+    height: 1.56rem; }
 
 .sidebar {
   background-color: #c69963;
@@ -308,7 +329,7 @@ button {
   .nav-btn::before {
     transform: translateY(-1rem); }
   .nav-btn::after {
-    transform: translateY(1rem); }
+    transform: translateY(0.9rem); }
 
 .features {
   grid-column: center-start / center-end;
