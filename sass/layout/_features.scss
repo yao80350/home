@@ -1,6 +1,6 @@
 .features {
     grid-column: center-start / center-end;
-    margin: 9.4rem;
+    margin: 9.4rem 0;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));

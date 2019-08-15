@@ -53,12 +53,6 @@ lem = 16px;
 
 html {
   font-size: 100%; }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 90%; } }
-  @media only screen and (max-width: 62em) {
-    html {
-      font-size: 80%; } }
 
 body {
   box-sizing: border-box; }
@@ -301,7 +295,7 @@ button {
 
 .features {
   grid-column: center-start / center-end;
-  margin: 9.4rem;
+  margin: 9.4rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 3.7rem; }
@@ -315,4 +309,28 @@ button {
 
 .footer {
   background-color: #101d2c;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 5rem; }
+  .footer .copyright {
+    font-size: .9rem;
+    color: #aaa;
+    margin-top: 3.75rem;
+    text-align: center; }
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.4rem, 1fr));
+  grid-gap: 1.25rem;
+  align-items: center; }
+  .nav__link:link, .nav__link:visited {
+    display: block;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    transition: all .2s; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px); }
