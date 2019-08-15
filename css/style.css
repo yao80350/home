@@ -293,6 +293,23 @@ button {
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1; }
 
+.nav-btn {
+  background: #fff;
+  height: 2px;
+  width: 2.8rem;
+  display: block;
+  margin: 2.5rem auto; }
+  .nav-btn::before, .nav-btn::after {
+    content: "";
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 2.8rem; }
+  .nav-btn::before {
+    transform: translateY(-1rem); }
+  .nav-btn::after {
+    transform: translateY(1rem); }
+
 .features {
   grid-column: center-start / center-end;
   margin: 9.4rem 0;

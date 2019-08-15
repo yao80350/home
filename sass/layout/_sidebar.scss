@@ -3,3 +3,27 @@
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / -1;
 }
+
+.nav-btn {
+    background: $color-white;
+    height: 2px;
+    width: 2.8rem;
+    display: block;
+    margin: 2.5rem auto;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        background: $color-white;
+        height: 2px;
+        width: 2.8rem;
+    }
+
+    &::before {
+        transform: translateY(-1rem);
+    }
+    &::after {
+        transform: translateY(1rem);
+    }
+}
