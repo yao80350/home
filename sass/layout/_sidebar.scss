@@ -2,6 +2,15 @@
     background-color: $color-primary;
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / -1;
+
+    @include respond(large) {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        
+        display: grid;
+        justify-content: end;
+        align-content: center;
+    }
 }
 
 .nav-btn {
@@ -25,5 +34,16 @@
     }
     &::after {
         transform: translateY(.9rem);
+    }
+
+    @include respond(large) {
+        margin-right: 1.9rem;
+
+        &::before {
+            transform: translateY(-.75rem);
+        }
+        &::after {
+            transform: translateY(.63rem);
+        }
     }
 }

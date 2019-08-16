@@ -10,7 +10,7 @@
 
     display: grid;
     grid-row-gap: 1rem;
-    grid-template-rows: 1fr min-content 3.75rem 1fr;
+    grid-template-rows: 1fr min-content minmax(3.75rem, min-content) 1fr;
     justify-content: center;
 
     &__logo {
@@ -46,9 +46,11 @@
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 1.9rem;
         justify-items: center;
+        align-items: center;
 
         img {
-            height: 1.56rem;
+            max-height: 1.56rem;
+            max-width: 100%;
             filter: brightness(70%);
         }
         
