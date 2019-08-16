@@ -2,16 +2,25 @@
     background-color: $color-grey-dark-1;
     grid-column: full-start / col-end 6;
 
+    @include respond(medium) {
+        grid-column: 1 / -1;
+    }
+
     background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)),
         url(../img/hero.jpeg);
     background-size: cover;
     background-position: center;
-    padding: 2.5rem 5rem 5rem 5rem;
+    padding: 5rem;
+    padding-top: 2.5rem;
 
     display: grid;
     grid-row-gap: 1rem;
     grid-template-rows: 1fr min-content minmax(3.75rem, min-content) 1fr;
     justify-content: center;
+
+    @include respond(small) {
+        padding: 3rem;
+    }
 
     &__logo {
         height: 1.9rem;

@@ -42,11 +42,19 @@
     &__area,
     &__price {
         font-size: 1rem;
-        margin-left: 1.25rem;
+        margin: 0 1.25rem;
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-column-gap: .7rem;
         align-items: center;
+
+        @include respond(extra-large) {
+            margin: 0 .8rem;
+        }
+
+        @include respond(large) {
+            font-size: .9rem;
+        }
 
         svg {
             height: 1.3rem;
